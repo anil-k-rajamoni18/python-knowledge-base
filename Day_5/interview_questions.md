@@ -1,4 +1,4 @@
-# 🎯 Python Full Stack — Day 5 Interview Preparation
+
 # Topic: OOP Fundamentals — Classes, Objects, Methods & the Four Pillars
 
 > **How to use this file:** Attempt each answer before reading. For senior roles, study the "Depth" sections. Be ready to write code on a whiteboard or shared editor — OOP questions almost always involve live coding.

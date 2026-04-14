@@ -1,4 +1,4 @@
-# 🎯 Python Full Stack — Day 4 Interview Preparation
+
 # Topic: Modules, Packages & Virtual Environments
 
 > **How to use this file:** Attempt each answer before reading. For senior roles, study the "Depth" sections and be ready to discuss real project scenarios. Questions are ordered by difficulty.

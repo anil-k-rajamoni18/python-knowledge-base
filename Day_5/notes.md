@@ -1,7 +1,4 @@
-# 🐍 Python Full Stack — Day 5 of 35
-# Topic: OOP Fundamentals — Classes, Objects, Methods & the Four Pillars
-**Audience:** Intermediate | **Duration:** 3 Hours | **Track:** Python → Django/Flask → Frontend → Deployment
-
+# 🐍 Python Full Stack — Day 5
 ---
 
 ## 1. Session Overview
@@ -1300,38 +1297,6 @@ print(repr(obj))                    # calls __repr__
 | "Is `self` a keyword?" | No — it's a convention. You could name it `this` or `me`. But NEVER do it — `self` is universal, expected by every Python developer and tool. |
 | "What's `__new__`? Do I need it?" | It allocates memory before `__init__` runs. You almost never need to override it — only in advanced patterns like Singleton, metaclasses, or immutable types. |
 | "What's the difference between a method and a function?" | A function stands alone. A method is a function defined inside a class and associated with instances of that class. |
-
----
-
-### 🖊️ Whiteboard Diagrams to Draw
-
-1. **Class vs Instance (Blueprint vs House):** Draw one "class box" on the left labeled `BankAccount` with fields listed. Draw three "instance boxes" on the right (alice, bob, carol) each with their own values. Arrows from class to instances labeled "instantiation."
-2. **Class variable vs Instance variable:** Draw a class box with `bank_name` at the TOP (shared). Then show three instance boxes below, each with their own `balance` field. Arrow from all three pointing UP to the shared `bank_name`.
-3. **Shadowing diagram:** Show `alice.bank_name = "X"` creating a NEW layer in alice's box — the class's `bank_name` is still there, but alice's own `bank_name` covers it. Bob's box still sees the class variable.
-4. **Three method types:** Three side-by-side columns — Instance Method (has `self` arrow to object), Class Method (has `cls` arrow to class box), Static Method (no arrows — standalone).
-5. **`__init__` call sequence:** `BankAccount("Alice", 1000)` → Python calls `__new__` (creates empty object) → Python calls `__init__(self, "Alice", 1000)` → object returned.
-6. **`self` explained:** Draw `alice.deposit(100)` on the left. Draw `BankAccount.deposit(alice, 100)` on the right with an "=" sign — show they're equivalent.
-
----
-
-### ⏱️ Timing Guide (3 Hours)
-
-| Time | Activity |
-|------|----------|
-| 0:00 – 0:10 | Day 4 recap (modules, packages, venv) |
-| 0:10 – 0:25 | OOP paradigm — four pillars, class vs object analogy + whiteboard |
-| 0:25 – 0:45 | `__init__`, `self`, instance variables — live coding simple Dog class |
-| 0:45 – 1:05 | Class variables — shared state, shadowing trap + whiteboard |
-| 1:05 – 1:15 | ☕ Break |
-| 1:15 – 1:35 | Three method types — instance/classmethod/staticmethod + live coding |
-| 1:35 – 1:50 | `__repr__` vs `__str__`, `@property` intro, naming conventions |
-| 1:50 – 2:20 | Guided Exercise 1 (build BankAccount step-by-step) |
-| 2:20 – 2:35 | Guided Exercise 2 (class vs instance state observation) |
-| 2:35 – 2:50 | Common mistakes walkthrough + Q&A |
-| 2:50 – 3:00 | MCQ recap, preview Day 6 (Inheritance, `super()`, MRO) |
-
-> 💡 **Tip:** The class vs instance variable shadowing concept needs extra time — many students assume `self.class_var = value` modifies the class variable. Run the `__dict__` demo live to show exactly what's in each object's dictionary.
-> 💡 **Demo tip:** Use `vars(obj)` or `obj.__dict__` live in the REPL to make instance variables tangible.
 
 ---
 

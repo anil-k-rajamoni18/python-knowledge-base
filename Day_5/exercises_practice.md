@@ -1,4 +1,4 @@
-# 💪 Python Full Stack — Day 5 Exercise & Practice File
+# Python Full Stack — Day 5 Exercise & Practice File
 # Topic: OOP Fundamentals — Classes, Objects, Methods & the Four Pillars
 
 > **Instructions:** Work through sections in order. Write your predictions before running. Attempt every problem before checking the answer key. Many problems build on each other.

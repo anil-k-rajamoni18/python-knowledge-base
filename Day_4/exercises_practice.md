@@ -1,7 +1,5 @@
-# 💪 Python Full Stack — Day 4 Exercise & Practice File
+# Python Full Stack — Day 4 Exercise & Practice File
 # Topic: Modules, Packages & Virtual Environments
-
-> **Instructions:** Work through sections in order. Predict outputs before running. Attempt every problem genuinely before checking the answer key. Many exercises require your terminal alongside your editor.
 
 ---
 
