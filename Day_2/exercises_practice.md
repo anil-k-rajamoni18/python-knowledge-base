@@ -1,4 +1,4 @@
-# 💪 Python Full Stack — Day 2 Exercise & Practice File
+# Day 2 Exercise & Practice File
 # Topic: Control Flow & Functions
 
 > **Instructions:** Work through sections in order. Write predictions before running code. Do NOT peek at answers until you've genuinely attempted each problem.

@@ -1,8 +1,5 @@
-# 🎯 Python Full Stack — Day 2 Interview Preparation
+# Day 2 Interview Preparation
 # Topic: Control Flow & Functions
-
-> **How to use this file:** Attempt each answer mentally or on paper before reading. For senior roles, study the "Depth Add-on" sections. Questions are ordered by difficulty.
-
 ---
 
 ## 🟢 Beginner Level Questions

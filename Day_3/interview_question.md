@@ -1,7 +1,5 @@
-# 🎯 Python Full Stack — Day 3 Interview Preparation
+# Day 3 Interview Preparation
 # Topic: Data Structures — Lists, Tuples, Sets, Dictionaries & Complexity
-
-> **How to use this file:** Attempt each answer before reading. For senior roles, study the "Depth" notes and complexity analysis sections. Questions are ordered by difficulty within each tier.
 
 ---
 

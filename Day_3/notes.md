@@ -1,4 +1,4 @@
-# 🐍 Python Full Stack — Day 3 of 35
+# 🐍 Python Full Stack — Day 3
 # Topic: Data Structures — Lists, Tuples, Sets, Dictionaries & Complexity
 **Audience:** Intermediate | **Duration:** 3 Hours | **Track:** Python → Django/Flask → Frontend → Deployment
 
@@ -1200,38 +1200,6 @@ ChainMap(d1, d2)        # layered lookup
 | "When would I use ChainMap?" | When you have layered configs — e.g., env vars override user preferences which override defaults — without copying or merging dicts. |
 | "Can a frozenset contain mutable objects?" | No — frozenset requires all its elements to be hashable (immutable). |
 | "What's amortized O(1)?" | The occasional expensive operation (list reallocation) is averaged over many cheap operations. Each append costs O(1) on average, even though some cost O(n). |
-
----
-
-### 🖊️ Whiteboard Diagrams to Draw
-
-1. **List as Dynamic Array:** Draw a row of contiguous boxes. Show pointer from variable name. When full, draw a bigger box being allocated and pointers copied.
-2. **Hash Table for Dict/Set:** Draw an array with 8 slots. Show `hash("key") % 8 = 3` pointing to slot 3. Show key-value pair stored there.
-3. **Set Operations (Venn Diagram):** Classic 2-circle Venn — shade union, intersection, difference, symmetric difference separately.
-4. **Nested List Aliasing Bug:** Draw `[[0]*3]*3` as 3 pointers pointing to the SAME inner list object. Show the correct version with 3 independent list objects.
-5. **Big O Growth Curves:** Axes: x=input size, y=time. Draw O(1) flat line, O(n) diagonal, O(n²) curve, O(log n) gentle curve. Point to which operations land on which line.
-6. **ChainMap Lookup:** Draw 3 dict boxes stacked. Arrow showing lookup searching from top to bottom and stopping at first match.
-
----
-
-### ⏱️ Timing Guide (3 Hours)
-
-| Time | Activity |
-|------|----------|
-| 0:00 – 0:10 | Day 2 quick recap (closures, LEGB, comprehensions) |
-| 0:10 – 0:35 | Lists — dynamic arrays, slicing, operations, nested list pitfall |
-| 0:35 – 0:50 | Tuples — immutability, packing/unpacking, namedtuple |
-| 0:50 – 1:10 | Sets — hash table intuition, operations, Venn diagram + live speed demo |
-| 1:10 – 1:20 | ☕ Break |
-| 1:20 – 1:45 | Dicts — hash map internals, methods, views, comprehensions |
-| 1:45 – 2:00 | Collections module — defaultdict, Counter, ChainMap |
-| 2:00 – 2:15 | Big O — complexity table, timeit benchmark live demo |
-| 2:15 – 2:40 | Guided exercises 1 & 2 (instructor-led) |
-| 2:40 – 2:50 | Common mistakes walkthrough |
-| 2:50 – 3:00 | MCQ recap, Q&A, Day 4 preview (OOP) |
-
-> 💡 **Tip:** The hash table intuition (sets/dicts) often needs a whiteboard diagram before code — draw first, code second.
-> 💡 **Live demo:** Run the `timeit` list vs set benchmark live — the dramatic speedup (100x–1000x) makes Big O concrete and memorable.
 
 ---
 

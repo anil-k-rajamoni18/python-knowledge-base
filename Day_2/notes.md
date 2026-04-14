@@ -1,6 +1,5 @@
-# 🐍 Python Full Stack — Day 2 of 35
+# 🐍 Python Full Stack — Day 2
 # Topic: Control Flow & Functions
-**Audience:** Intermediate | **Duration:** 3 Hours | **Track:** Python → Django/Flask → Frontend → Deployment
 
 ---
 
@@ -1196,33 +1195,6 @@ def outer():
 | "What are type hints good for if Python ignores them?" | IDE support (autocompletion, errors), `mypy` static analysis, documentation, and Django REST Framework serializers use them. |
 
 ---
-
-### 🖊️ Whiteboard Diagrams to Draw
-
-1. **LEGB Scope Diagram:** Four nested boxes labeled B (outermost), G, E, L (innermost). Arrow from L searching outward to B.
-2. **Closure Memory Model:** Draw `make_counter()` on the stack, then show the returned `counter` function with an arrow to the captured `count` cell still alive on the heap.
-3. **for/else Flow:** Draw a flowchart — loop body → condition → break? → if yes: skip else; if no: continue; when done: run else.
-4. **Argument Order:** Linear diagram: `positional → *args → keyword-only → **kwargs`
-5. **Generator vs List:** Two diagrams — list creates a full box of values at once; generator shows a tap producing one value at a time on demand.
-6. **HOF concept:** Box labeled "outer function" → produces → box labeled "inner function" → which has a pointer back to outer scope.
-
----
-
-### ⏱️ Timing Guide (3 Hours)
-
-| Time | Activity |
-|------|----------|
-| 0:00 – 0:10 | Day 1 quick recap quiz (3 questions), setup check |
-| 0:10 – 0:30 | Control flow: if/elif/else, ternary, loop else + whiteboard |
-| 0:30 – 0:45 | break/continue/pass + match/case live demo |
-| 0:45 – 1:05 | Comprehensions — list, dict, set, generator |
-| 1:05 – 1:15 | ☕ Break |
-| 1:15 – 1:35 | Functions: argument patterns (*args, **kwargs), return values |
-| 1:35 – 1:55 | First-class functions, lambda, type hints |
-| 1:55 – 2:15 | LEGB rule, global/nonlocal, closures + whiteboard |
-| 2:15 – 2:35 | Guided exercises 1 & 2 (instructor-led) |
-| 2:35 – 2:50 | Common mistakes walkthrough + Q&A |
-| 2:50 – 3:00 | MCQ recap, assignment briefing, Day 3 preview |
 
 > 💡 **Tip:** The closure + LEGB section often needs extra time — budget 5 minutes flex here.
 > 💡 **Demo tip:** Use [Python Tutor](https://pythontutor.com) live to show LEGB lookup and closure variable capture visually.

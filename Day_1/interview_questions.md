@@ -1,7 +1,5 @@
-# 🎯 Python Full Stack — Day 1 Interview Preparation
-# Topic: Python Basics — Data Types, Variables & Memory Model
 
-> **How to use this file:** Read the question, attempt an answer mentally or on paper, then reveal the answer. For senior roles, go beyond the answer — add depth from the "Depth Add-on" notes.
+# Topic: Python Basics — Data Types, Variables & Memory Model
 
 ---
 

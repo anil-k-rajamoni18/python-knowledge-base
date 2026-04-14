@@ -1,9 +1,8 @@
-# 💪 Python Full Stack — Day 1 Exercise & Practice File
+
 # Topic: Python Basics — Data Types, Variables & Memory Model
 
 > **Instructions:** Work through sections in order. Each section builds on the last.
 > Run all code in your Python environment (terminal, VS Code, or Jupyter Notebook).
-> Do NOT look at the answers until you've attempted each problem.
 
 ---
 

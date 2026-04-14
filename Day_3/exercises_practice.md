@@ -1,7 +1,5 @@
-# 💪 Python Full Stack — Day 3 Exercise & Practice File
+# Day 3 Exercise & Practice File
 # Topic: Data Structures — Lists, Tuples, Sets, Dictionaries & Complexity
-
-> **Instructions:** Work through sections in order. Write your predictions before running. Attempt every problem genuinely before checking the answer key.
 
 ---
 
