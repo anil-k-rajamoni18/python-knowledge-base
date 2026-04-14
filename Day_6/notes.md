@@ -670,13 +670,6 @@ print(Duck.__mro__)
 # (<class 'Duck'>, <class 'Flyable'>, <class 'Swimmable'>, <class 'object'>)
 
 print(Duck.mro())
-# [<class 'Duck'>, <class 'Flyable'>, <class 'Swimmable'>, <class 'object'>]
-
-# When Duck calls super().describe_movement(), MRO tells Python:
-# 1. Check Duck — has it? Yes (our override). Done for that call.
-# 2. If Duck calls super(), check Flyable next.
-# 3. Then Swimmable.
-# 4. Then object.
 
 
 # ── Diamond inheritance — MRO shines ─────────────────────────────────────
@@ -1043,18 +1036,6 @@ Polymorphic function:
 - def generate_rental_quote(vehicles: list, days: int) → None
   → prints rental cost for each vehicle type
 """
-
-# Hints:
-# - super().__init__() in every child
-# - super().calculate_rental_cost(days) for the base calculation
-# - All __init__ methods pass appropriate args to parent
-
-# Expected output for 10 days:
-# Car (Toyota Camry): $450.00  (500*10 = 5000, with 10% discount = 4500... wait)
-# Truck (Ford F-150, 2 tons): $1800.00
-# Motorcycle (Honda CBR600): $720.00
-```
-
 > **Hints:** Call `super().calculate_rental_cost(days)` inside each child's method. Use `isinstance(self, ...)` is NOT needed — let polymorphism do the work.
 
 ---
@@ -1405,44 +1386,11 @@ def process(items: list):
 - **C) When the relationship is "has-a" rather than "is-a" (e.g., Car has an Engine)** ✅
 - D) When using Python 3
 
----
+💡 Teaching tip: The super() concept takes the most time. Draw the chain on the whiteboard — show that super() doesn't go "to the parent" but "to the next class in the MRO." This prevents 90% of MRO confusion.
+💡 Live demo tip: The process_monthly_interest([savings, current, fixed]) demo is the most impactful moment — show that changing the list order or adding a new account type requires ZERO changes to the function. That's the power of polymorphism.
 
-### 🖊️ Whiteboard Diagrams to Draw
 
-1. **IS-A hierarchy diagram:** Box labeled `Account` at top. Three boxes below connected by arrows: `SavingsAccount`, `CurrentAccount`, `FixedDepositAccount`. Label arrows "inherits from." Draw what each child adds in a smaller box beside it.
 
-2. **Method call chain with `super()`:** Draw three boxes: `Account → SavingsAccount → PremiumSavingsAccount`. Show `withdraw()` call going DOWN the chain, then `super()` calling UP. Show what each level adds.
-
-3. **MRO for diamond inheritance:** Draw the diamond: D at top, B and C in middle, A at bottom. Show the MRO arrow as: D → B → C → A → object (left to right, not bottom to top of diamond).
-
-4. **Duck typing vs type checking:** Two columns. Left: "Type-checking (Java-style)" — `if isinstance(obj, Account): obj.withdraw()`. Right: "Duck typing (Python-style)" — just call `obj.withdraw()` — works for anything with `withdraw()`. Show that the right column is shorter and more flexible.
-
-5. **Polymorphism diagram:** Draw one function `process_monthly_interest(accounts)`. Show arrows from it pointing to `SavingsAccount.calculate_interest()`, `CurrentAccount.calculate_interest()`, `FixedDepositAccount.calculate_interest()`. Label: "same call → different behavior."
-
-6. **Inheritance types (quick sketch):** Single, Multilevel, Hierarchical, Multiple — draw each as a simple box diagram with 3-4 boxes.
-
----
-
-### ⏱️ Timing Guide (3 Hours)
-
-| Time | Activity |
-|------|----------|
-| 0:00 – 0:10 | Day 5 quick recap (classes, `__init__`, `self`, 3 method types) |
-| 0:10 – 0:30 | Inheritance fundamentals — IS-A concept, `class Child(Parent)`, basic example + whiteboard |
-| 0:30 – 0:50 | `super()` — why it exists, constructor inheritance, method extending vs replacing |
-| 0:50 – 1:10 | Method overriding — full Account hierarchy live coding (Account + SavingsAccount) |
-| 1:10 – 1:20 | ☕ Break |
-| 1:20 – 1:35 | Polymorphism — duck typing, `process_monthly_interest()` demo, polymorphism vs `isinstance` |
-| 1:35 – 1:50 | Types of inheritance + MRO — diagrams, `__mro__`, diamond inheritance demo |
-| 1:50 – 2:20 | Guided Exercise 1 (Shape hierarchy) — instructor-led |
-| 2:20 – 2:40 | Guided Exercise 2 (Employee hierarchy) — instructor-led |
-| 2:40 – 2:50 | Common mistakes walkthrough + Q&A |
-| 2:50 – 3:00 | MCQ recap + Day 7 preview (dunder methods) |
-
-> 💡 **Teaching tip:** The `super()` concept takes the most time. Draw the chain on the whiteboard — show that `super()` doesn't go "to the parent" but "to the next class in the MRO." This prevents 90% of MRO confusion.
-> 💡 **Live demo tip:** The `process_monthly_interest([savings, current, fixed])` demo is the most impactful moment — show that changing the list order or adding a new account type requires ZERO changes to the function. That's the power of polymorphism.
-
----
 
 ### 📚 Resources & Further Reading
 
