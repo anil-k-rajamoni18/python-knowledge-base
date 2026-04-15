@@ -20,14 +20,6 @@ By the end of this session, learners will be able to:
 - OOP — classes, `__init__`, instance variables, three method types (Day 5)
 - Inheritance, `super()`, polymorphism, MRO (Day 6)
 
-### 🔗 Connection to the Full Stack Journey
-- **Django Models (Day 20+):** Django uses `@property` everywhere — `user.full_name`, `product.is_in_stock` are computed properties on model classes
-- **Django REST Framework (Day 24+):** `SerializerMethodField` uses the property pattern; access control determines what fields APIs expose
-- **Django Forms (Day 22+):** Form validation in `clean_<fieldname>()` methods mirrors setter validation patterns
-- **Flask (Day 18+):** Flask's `current_user.is_authenticated` is a property on the User model
-- **Abstract classes (Day 9+):** Django's `Model`, `View`, `Form` are all abstract-like base classes — understanding this today makes Day 20+ instantly familiar
-
----
 
 ## 2. Concept Explanation
 
