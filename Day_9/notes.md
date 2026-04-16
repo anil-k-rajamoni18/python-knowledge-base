@@ -79,6 +79,7 @@ Built-in exceptions are generic. `ValueError` tells you *a value was wrong*, but
 
 ### 3.1 Basic try/except/else/finally
 
+
 ```python
 # Basic structure — all four blocks
 def read_config(filename):
