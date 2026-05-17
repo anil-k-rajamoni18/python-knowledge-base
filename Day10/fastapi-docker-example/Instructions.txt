@@ -1,0 +1,16 @@
+## Build Docker Image
+
+docker build -t fastapi-docker-example .
+
+## List Docker Images
+docker images
+
+## Run Docker Container
+docker run -d -p 8000:8000 fastapi-docker-example
+
+## Access the FastAPI application
+Open your web browser and navigate to http://localhost:8000 to see the FastAPI application running inside the Docker container.
+
+## Access the API documentation
+You can access the automatically generated API documentation at http://localhost:8000/docs or http://
+

@@ -1,0 +1,4 @@
+2025-01-01 12:00:01 INFO User John logged in
+2025-01-01 12:01:08 ERROR Payment service failed
+2025-01-01 12:02:11 WARN Disk space low
+2025-01-01 12:02:30 INFO User Anita logged in

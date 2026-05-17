@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  fastapi:
+    build: .
+    container_name: fastapi-student-course
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - sqlite_data:/app/db_data
+    env_file:
+      - .env
+    restart: always
+
+volumes:
+  sqlite_data:

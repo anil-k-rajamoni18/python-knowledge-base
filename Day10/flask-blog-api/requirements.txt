@@ -1,0 +1,13 @@
+Flask
+Flask-JWT-Extended
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Cors
+flask-limiter
+marshmallow
+Werkzeug
+psycopg2-binary
+redis
+rq
+pytest
+python-dotenv

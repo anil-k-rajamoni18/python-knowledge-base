@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=sqlite:///blog.db
+      - REDIS_URL=redis://redis:6379/0
+      - FLASK_ENV=development
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"

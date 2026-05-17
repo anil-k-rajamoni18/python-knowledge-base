@@ -1,0 +1,10 @@
+# Default owner for everything in the repo
+* @anil-k-rajamoni18
+
+# App modules ownership
+/app/ @anil-k-rajamoni18
+/scripts/ @anil-k-rajamoni18
+/tests/ @anil-k-rajamoni18
+
+# CI/CD workflows
+.github/workflows/ @anil-k-rajamoni18

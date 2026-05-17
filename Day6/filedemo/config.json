@@ -1,0 +1,15 @@
+{
+    "env": "development",
+    "debug": true,
+    "database": {
+        "host": "localhost",
+        "port": 5432, 
+        "user": "admin",
+        "password": "password123",
+        "name": "mydatabase"
+    },
+    "logging": {
+        "level": "info",
+        "file": "server.log"
+    }
+}
