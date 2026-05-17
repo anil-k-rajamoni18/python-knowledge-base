@@ -1,7 +1,4 @@
 # Python Build Tools & Dependency Management
-## In-Depth Engineering Notes
-
-> **Author's Note:** These notes are written from the perspective of a senior Python engineer and tutor. Every concept is explained with the *why*, not just the *what*. Read sequentially for full context, or jump to any section as a reference.
 
 ---
 
@@ -3148,5 +3145,3 @@ uv run pytest                     # Run in venv
 17. How would you implement automated vulnerability management for a team of 20 developers?
 
 ---
-
-*These notes were compiled for engineering excellence. For the latest tool versions and CVE databases, always check the official documentation: [pip-audit](https://github.com/pypa/pip-audit), [Poetry](https://python-poetry.org/docs/), [Pipenv](https://pipenv.pypa.io/).*
